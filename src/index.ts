@@ -1,4 +1,5 @@
 // intro.ts
+import { asyncProgramming } from "./asyncProgramming";
 import { functions } from "./funtions";
 import { generics } from "./generics";
 import { users } from "./users";
@@ -28,3 +29,5 @@ console.log(users())
 
 functions()
 generics()
+
+asyncProgramming();
