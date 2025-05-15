@@ -47,16 +47,16 @@ export const generics = () => {
     const pair4 = createPair(true,"30")
     console.log(pair4)
 
-    function addNumbers<T>(array: T[]): [T, T]{
+    function firtsAndSecondElement<T>(array: T[]): [T, T]{
         return [array[0], array[1]]
     }
 
     const numbers: number[] = [1,2,3,4,5,6]
-    console.log(addNumbers(numbers))
+    console.log(firtsAndSecondElement(numbers))
 
     const strings: string[] = ["Hello","Joseph","Mwangaza"]
 
-    console.log(addNumbers(strings))
+    console.log(firtsAndSecondElement(strings))
      
 
 }
