@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const asyncProgramming = () => {
     // promises
     // console.log("--------Async Programming-------");
@@ -46,9 +48,10 @@ export const asyncProgramming = () => {
 
     const fetchAPI = async(id?: number): Promise<void> => {
         try {
-            const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);    
-            const users = await response.json();
-            console.log(users.name)
+            const url = `https://jsonplaceholder.typicode.com/users/${id}`
+            const response = await axios.get(url);  
+            const users = await response.data;
+            console.log(users)
         } catch (error) {
             console.error(error)
         }
