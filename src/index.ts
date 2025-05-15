@@ -1,5 +1,6 @@
 // intro.ts
 import { functions } from "./funtions";
+import { generics } from "./generics";
 import { users } from "./users";
 
 // 👉 Basic Types
@@ -26,3 +27,4 @@ const user1: User = {
 console.log(users())
 
 functions()
+generics()
